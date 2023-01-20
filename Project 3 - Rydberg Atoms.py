@@ -24,6 +24,8 @@ def input(type):
 
         nsteps = 4
         #add other input types
+    elif type ==1:
+        print("Set up CLI")
     return atomMass,atomcharge,unit,n1,n2, nsteps
 
 
