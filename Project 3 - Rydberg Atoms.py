@@ -5,8 +5,6 @@ for Hydrogenic ions
 
 #imports here
 import module
-from sys import argv #this is the CLI
-import argparse #this is better CLI
 
 
 #input - hard code for now, come back and fix
