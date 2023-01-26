@@ -5,6 +5,7 @@ for Hydrogenic ions
 
 #imports here
 import module
+from sys import argv #this is the CLI
 
 #input - hard code for now, come back and fix
 def input(type):
@@ -15,6 +16,8 @@ def input(type):
         2 from cli
         etc
     '''
+    print(argv)
+    type = int(argv[1])
     if type == 0:
         atomMass = 1    #hydrogen atom in amu
         atomcharge = 1  #hydrogen charge
@@ -27,10 +30,16 @@ def input(type):
     elif type ==1:
         print("Set up CLI")
         print("More changes")
+        atomMass = float(argv[2])
+        atomcharge = int(argv[3])
+        unit = argv[4]
+        n1 = int(argv[5])
+        n2 = int(argv[6])
+        nsteps = int(argv[7])
     return atomMass,atomcharge,unit,n1,n2, nsteps
 
 
-print(input(0))
+#print(input(0))
 atomMass,atomcharge,unit,n1,n2, nsteps = input(0)
 #calculation
 #calculate Reduced mass
